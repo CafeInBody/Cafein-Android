@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.wachacha">
+    package="sso.hyeon.wachacha">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.BLUETOOTH"/>
@@ -15,7 +15,7 @@
     </queries>
 
     <application
-        android:name = ".MainApplication"
+        android:name = "sso.hyeon.wachacha.MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="CaffeinbodyWatch"
@@ -35,7 +35,7 @@
             android:value="true" />
 
         <service
-            android:name=".DataLayerListenerService"
+            android:name="sso.hyeon.wachacha.DataLayerListenerService"
             android:exported="true">
             <intent-filter>
                 <!-- listeners receive events that match the action and data filters -->
@@ -59,7 +59,7 @@
         </service>
 
         <activity
-            android:name=".MainActivityWearOS"
+            android:name="sso.hyeon.wachacha.MainActivityWearOS"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
@@ -68,11 +68,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HeartRateActivity"
+        <activity android:name="sso.hyeon.wachacha.HeartRateActivity"
             android:theme="@style/Theme.AppCompat"/>
-        <activity android:name=".Hilt_HeartRateActivity" />
+        <activity android:name="sso.hyeon.wachacha.Hilt_HeartRateActivity" />
         <activity
-            android:name=".DrinkActivity"
+            android:name="sso.hyeon.wachacha.DrinkActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat"/>
     </application>

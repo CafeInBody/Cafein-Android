@@ -117,10 +117,6 @@
                 android:progress="40"
                 android:progressDrawable="@drawable/stats_progress" />
 
-
-
-
-
         </FrameLayout>
 
         <LinearLayout
@@ -301,7 +297,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/checkWatchBtn"
+            android:id="@+id/addBeverageBtn"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
 
@@ -321,7 +317,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="워치로 검사하기"
+                android:text="카페인 추가하기"
                 android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -333,13 +329,13 @@
                 android:layout_gravity="center"
 
                 android:layout_marginStart="10dp"
-                android:background="@drawable/icon_watch"
+                android:background="@drawable/plus_btn"
                 android:backgroundTint="@color/white"
                 android:padding="10dp" /></LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/addBeverageBtn"
+            android:id="@+id/checkWatchBtn"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
@@ -356,7 +352,7 @@
                 android:layout_height="26dp"
 
                 android:layout_gravity="center"
-                android:background="@drawable/plus_btn"
+                android:background="@drawable/icon_watch"
                 android:backgroundTint="#333333"/>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
